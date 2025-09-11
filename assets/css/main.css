@@ -27,7 +27,7 @@
     background-color: #eee;
     border-radius: 50%;
     transition: transform 0.3s ease-out;
-    background-image:url('assets/image/sun-svgrepo-com.svg');
+    background-image:url('/assets/image/sun-svgrepo-com.svg');
 
   }
   
