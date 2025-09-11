@@ -1,0 +1,48 @@
+/* Oculta o checkbox original */
+.switch-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* Estiliza o "corpo" do switch */
+  .switch-label {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: #444;
+    border-radius: 34px;
+    cursor: pointer;
+  }
+  
+  /* A bolinha do switch */
+  .switch-slider {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #eee;
+    border-radius: 50%;
+    transition: transform 0.3s ease-out;
+    background-image:url('assets/image/sun-svgrepo-com.svg');
+
+  }
+  
+  /* Estilo quando o checkbox está marcado (ligado) */
+  .switch-input:checked + .switch-label .switch-slider {
+    background-color: #222; /* Cor azul para ligado */
+    transform: translateX(26px);
+  }
+  
+  /* Efeito de sombra ao redor do corpo do switch */
+  .switch-label:hover {
+    box-shadow: 0 0 1px black;
+  }
+  
+  /* Transição para a cor do corpo quando ligado */
+  .switch-input:checked + .switch-label {
+    background-color: gray; /* Cor azul quando o switch está ligado */
+  }

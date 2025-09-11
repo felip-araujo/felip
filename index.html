@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+<head>
+  <meta charset="UTF-8">
+  <title>Felipe Araujo | Desenvolvedor Full Stack</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/image/terminal-svgrepo-com.svg" type="image/x-icon">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            rubik: ['Rubik', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="bg-zinc-200 dark:bg-zinc-900  ">
+  <div id="bg-gradient" class="fixed inset-0 -z-10 pointer-events-none transition-all duration-300"></div>
+
+
+<div class="h-32 w-full h-[90vh] relative overflow-hidden">
+  
+
+  <div class="switch-container mb-10 px-4 py-4 flex justify-end">
+    <p class=" text-zinc-900 font-medium px-2 py-2 dark:text-zinc-100"><a href="">Github</a></p>
+    <p class=" text-zinc-900 font-medium px-2 py-2 dark:text-zinc-100"><a href="">LinkedIn</a></p>
+    <p class=" text-zinc-900 font-medium px-4 py-2 dark:text-zinc-100"><a href="">Currículo</a></p>
+    <input type="checkbox" id="toggle-switch" class="switch-input">
+    <label for="toggle-switch" class="switch-label">
+      <span class="switch-slider"></span>
+    </label>
+  </div>
+
+  <div id="hero" class=" border-b border-zinc-400 dark:border-zinc-600">
+    <div class="flex justify-center">
+      <img src="assets/image/felipe.png" class="w-48 h-48 object-cover rounded-full shadow-md" alt="">
+    </div>
+    <div id="texto" class="font-rubik py-2 text-4xl text-zinc-900 text-center dark:text-zinc-100 ">
+      Olá, meu nome é <strong>Felipe Araujo</strong>, <br> Desenvolvedor Full Stack
+    </div>
+    <p class="text-lg mb-20 font-ligth text-zinc-800 text-center dark:text-zinc-100">
+      Desenvolvo soluções digitais personalizadas utilizando PHP, JavaScript, TailwindCSS e Angular, <br> 
+      com sólida experiência no desenvolvimento de APIs REST em Laravel ou PHP nativo.</p>
+  </div>
+</div>
+
+
+
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    const gradient = document.getElementById('bg-gradient');
+
+    document.addEventListener('mousemove', (e) => {
+      const x = e.clientX;
+      const y = e.clientY;
+
+      // gradiente no modo claro (azul → roxo)
+      const lightGradient = `radial-gradient(circle at ${x}px ${y}px, rgba(59,130,246,0.6), rgba(139,120,248,0.3), transparent 40%)`;
+      // gradiente no modo escuro (branco translúcido)
+      const darkGradient = `radial-gradient(circle at ${x}px ${y}px, rgba(59,130,246,0.3), rgba(139,92,246,0.2), transparent 70%)`;
+
+      // verifica se está no modo dark
+      if (document.documentElement.classList.contains('dark')) {
+        gradient.style.background = darkGradient;
+      } else {
+        gradient.style.background = lightGradient;
+      }
+    });
+  </script>
+</body>
+
+</html>
