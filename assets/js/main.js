@@ -16,3 +16,22 @@ toggle.addEventListener("change", () => {
     localStorage.setItem("theme", "light");
   }
 });
+
+
+function projetos() {
+  const section = document.getElementById("projects");
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const bars = document.querySelectorAll("[data-width]");
+  bars.forEach(bar => {
+    const width = bar.getAttribute("data-width");
+    setTimeout(() => {
+      bar.style.width = width;
+    }, 200); // pequeno delay para efeito de animação
+  });
+});

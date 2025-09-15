@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="">
+
 <head>
   <meta charset="UTF-8">
   <title>Felipe Araujo | Desenvolvedor Full Stack</title>
@@ -28,9 +29,12 @@
   <div class="w-full h-auto relative overflow-hidden px-4 sm:px-8">
     <!-- menu -->
     <div class="switch-container mb-6 pt-4 flex justify-end gap-2">
+      <p class="text-zinc-900 font-medium dark:text-zinc-100"><a
+          href="assets/image/Felipe-Araujo-Desenvolvedor-08-25.pdf">Currículo</a></p>
+      <p class="text-zinc-900 font-medium dark:text-zinc-100"><a
+          href="https://www.linkedin.com/in/ofelipearaujo/">LinkedIn</a></p>
       <p class="text-zinc-900 font-medium dark:text-zinc-100"><a href="https://github.com/felip-araujo">Github</a></p>
-      <p class="text-zinc-900 font-medium dark:text-zinc-100"><a href="https://www.linkedin.com/in/ofelipearaujo/">LinkedIn</a></p>
-      <p class="text-zinc-900 font-medium dark:text-zinc-100"><a href="">Currículo</a></p>
+      <p class="text-zinc-900 font-medium dark:text-zinc-100"><a href="https://wa.me/92984520381">Contato</a></p>
       <input type="checkbox" id="toggle-switch" class="switch-input">
       <label for="toggle-switch" class="switch-label">
         <span class="switch-slider"></span>
@@ -44,59 +48,214 @@
 
       <!-- título maior no mobile -->
       <div class="py-2 text-lg sm:text-5xl lg:text-4xl text-center text-zinc-900 dark:text-zinc-100 leading-snug">
-        Olá, meu nome é <strong>Felipe Araujo</strong>, <br> Desenvolvedor Full Stack PHP
+        Olá, meu nome é <strong>Felipe Araujo,</strong> <br> sou Desenvolvedor Full Stack PHP.
       </div>
 
       <!-- subtítulo maior e espaçado no mobile -->
       <p class="mt-3 sm:text-lg lg:text-5x1 text-zinc-800 text-center dark:text-zinc-100 leading-relaxed">
-        Desenvolvo soluções digitais personalizadas utilizando PHP, JavaScript, TailwindCSS e Angular,<br>
+        Desenvolvo soluções digitais personalizadas utilizando PHP, JavaScript e TailwindCSS <br>
         com sólida experiência no desenvolvimento de APIs REST em Laravel ou PHP nativo.
       </p>
 
       <div class="flex justify-center mt-6">
-        <button
+        <button onclick="projetos()"
           class="bg-zinc-900 px-6 py-3 text-base sm:text-lg rounded text-zinc-100 dark:bg-zinc-200 dark:text-zinc-800">
-          Conheça alguns projetos
+          Ver Projetos
         </button>
       </div>
     </div>
   </div>
 
   <!-- projetos -->
-  <div class="w-full relative overflow-hidden px-4 sm:px-8">
-    <div id="projects" class="py-10">
-      <div class="flex justify-center">
-        <p class="py-2 text-2xl sm:text-3xl lg:text-4xl text-zinc-900 text-center dark:text-zinc-100">Projetos</p>
+  <div class="w-full relative overflow-hidden border-b border-zinc-400 dark:border-zinc-600 pb-8">
+    <div id="projects" class="py-10 max-w-screen-xl mx-auto px-4 sm:px-8">
+      <div class="text-center">
+        <p class="py-2 text-2xl sm:text-3xl lg:text-4xl text-zinc-900 text-center dark:text-zinc-100">
+          <strong> Projetos Relevantes</strong>
+        </p>
+        <p class="mt-3 sm:text-lg lg:text-xl text-zinc-800 text-center dark:text-zinc-100 leading-relaxed">
+          Alguns dos meus principais projetos, com soluções funcionais e interfaces responsivas. Trabalhei com PHP, <br>
+          JavaScript, TailwindCSS, HTML, WordPress, Elementor e APIs customizadas, sempre focando <br>
+          na experiência do usuário e na eficiência do código.
+        </p>
       </div>
 
-      <!-- grid responsivo: 1 col mobile, 2 col sm, 3 col md+ -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6">
-        <img src="/assets/image/felipe.png" class="w-full object-cover rounded shadow-md" alt="">
-        <img src="/assets/image/felipe.png" class="w-full object-cover rounded shadow-md" alt="">
-        <img src="/assets/image/felipe.png" class="w-full object-cover rounded shadow-md" alt="">
-        <img src="/assets/image/felipe.png" class="w-full object-cover rounded shadow-md" alt="">
-        <img src="/assets/image/felipe.png" class="w-full object-cover rounded shadow-md" alt="">
-        <img src="/assets/image/felipe.png" class="w-full object-cover rounded shadow-md" alt="">
+      <!-- grid responsivo -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
+
+        <!-- card -->
+        <div
+          class="group relative bg-white dark:bg-zinc-800 rounded-2xl shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <img src="/assets/image/conipa.png"
+            class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" alt="Projeto 1">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Sistema - Inventário Conipa | Full Stack
+            </h3>
+            <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">Backend em PHP com API RESTful, consumida no
+              frontend via Fetch API em JavaScript, com interface responsiva desenvolvida em HTML e TailwindCSS.</p>
+          </div>
+        </div>
+
+        <div
+          class="group relative bg-white dark:bg-zinc-800 rounded-2xl shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <img src="/assets/image/decalques2.png"
+            class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" alt="Projeto 1">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Plugin - Edição Vetorial | WordPres
+            </h3>
+            <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+              Plugin WordPress para edição de arquivos SVG diretamente no navegador. Desenvolvido em PHP (backend) e
+              JavaScript + Bootstrap (frontend), permite criar, editar e salvar artes gráficas dentro do próprio site.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="group relative bg-white dark:bg-zinc-800 rounded-2xl shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <img src="/assets/image/site-grupo-bramam.png"
+            class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" alt="Projeto 1">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Site - Grupo Bramam (Ambev)</h3>
+            <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+              Construído com Elementor para garantir autonomia na gestão de conteúdo pelo cliente. Inclui
+              implementação personalizada em JavaScript e CSS para exibir um mapa interativo com todas as filiais.</p>
+          </div>
+        </div>
+
+        <!-- outros cards... -->
+
+      </div>
+      <div class="flex justify-center mt-6">
+        <button onclick="projetos()"
+          class="bg-zinc-900 px-6 py-3 text-base sm:text-lg rounded text-zinc-100 dark:bg-zinc-200 dark:text-zinc-800">
+          Fale Comigo
+        </button>
       </div>
     </div>
   </div>
 
-  <script src="assets/js/main.js"></script>
-  <script>
-    const gradient = document.getElementById('bg-gradient');
+  <!-- Habilidades e Experiência -->
+  <div class="w-full relative overflow-hidden border-b border-zinc-400 dark:border-zinc-600 pb-12">
+    <div id="habilidades" class="py-10 max-w-screen-xl mx-auto px-4 sm:px-8">
+      <!-- título -->
+      <div class="text-center mb-10">
+        <p class="py-2 text-2xl sm:text-3xl lg:text-4xl text-zinc-900 dark:text-zinc-100">
+          <strong>Habilidades e Experiência</strong>
+        </p>
+        <p class="mt-3 sm:text-lg lg:text-xl text-zinc-800 dark:text-zinc-100 leading-relaxed">
+          Uma visão das minhas principais habilidades técnicas e experiências profissionais, que fortalecem <br>
+          meu crescimento e aprimoram minhas competências em programação, <br>
+          resolução de problemas e criação de soluções eficientes.
+        </p>
+      </div>
 
-    document.addEventListener('mousemove', (e) => {
-      const x = e.clientX;
-      const y = e.clientY;
-      const lightGradient = `radial-gradient(circle at ${x}px ${y}px, rgba(59,130,246,0.6), rgba(139,120,248,0.3), transparent 40%)`;
-      const darkGradient = `radial-gradient(circle at ${x}px ${y}px, rgba(59,130,246,0.3), rgba(139,92,246,0.2), transparent 70%)`;
-      if (document.documentElement.classList.contains('dark')) {
-        gradient.style.background = darkGradient;
-      } else {
-        gradient.style.background = lightGradient;
-      }
-    });
-  </script>
+      <!-- grid de duas colunas -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+        <!-- coluna habilidades -->
+        <div class="space-y-6">
+          <!-- PHP -->
+          <div>
+            <p class="text-zinc-800 dark:text-zinc-300 mb-1 font-medium">PHP</p>
+            <div class="w-full bg-zinc-300 dark:bg-zinc-700 rounded-full h-4">
+              <div class="bg-blue-500 h-4 rounded-full w-0 transition-all duration-1000" data-width="85%"></div>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div>
+            <p class="text-zinc-800 dark:text-zinc-300 mb-1 font-medium">JavaScript</p>
+            <div class="w-full bg-zinc-300 dark:bg-zinc-700 rounded-full h-4">
+              <div class="bg-yellow-500 h-4 rounded-full w-0 transition-all duration-1000" data-width="82%"></div>
+            </div>
+          </div>
+
+          <!-- MySQL -->
+          <div>
+            <p class="text-zinc-800 dark:text-zinc-300 mb-1 font-medium">MySQL</p>
+            <div class="w-full bg-zinc-300 dark:bg-zinc-700 rounded-full h-4">
+              <div class="bg-indigo-500 h-4 rounded-full w-0 transition-all duration-1000" data-width="85%"></div>
+            </div>
+          </div>
+
+          <!-- TailwindCSS -->
+          <div>
+            <p class="text-zinc-800 dark:text-zinc-300 mb-1 font-medium">TailwindCSS</p>
+            <div class="w-full bg-zinc-300 dark:bg-zinc-700 rounded-full h-4">
+              <div class="bg-emerald-500 h-4 rounded-full w-0 transition-all duration-1000" data-width="80%"></div>
+            </div>
+          </div>
+
+          <!-- WordPress / Elementor -->
+          <div>
+            <p class="text-zinc-800 dark:text-zinc-300 mb-1 font-medium">WordPress / Elementor</p>
+            <div class="w-full bg-zinc-300 dark:bg-zinc-700 rounded-full h-4">
+              <div class="bg-purple-500 h-4 rounded-full w-0 transition-all duration-1000" data-width="95%"></div>
+            </div>
+          </div>
+
+          <!-- HTML -->
+          <div>
+            <p class="text-zinc-800 dark:text-zinc-300 mb-1 font-medium">HTML</p>
+            <div class="w-full bg-zinc-300 dark:bg-zinc-700 rounded-full h-4">
+              <div class="bg-red-500 h-4 rounded-full w-0 transition-all duration-1000" data-width="92%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- coluna experiência profissional -->
+        <div class="space-y-6">
+          <!-- experiência 1 -->
+          <div
+            class="bg-white dark:bg-zinc-800 rounded-2xl shadow-md p-6 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Encarregado Pela Proteção de Dados
+              (Atual) </h3>
+            <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+              Responsável por conduzir a adequação à LGPD na Inspetoria Salesiana Missionária da Amazônia,
+              incluindo treinamentos internos e implementação de medidas de segurança. Essa experiência aprofundou
+              minhas
+              competências em segurança da informação, gestão de dados em bancos SQL e elaboração de documentação
+              técnica e compliance.
+            </p>
+          </div>
+
+          <!-- experiência 2 -->
+          <div
+            class="bg-white dark:bg-zinc-800 rounded-2xl shadow-md p-6 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Desenvolvedor Web – Evolution Design
+              (Proprietário) </h3>
+            <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+              Criação e gestão de websites institucionais e e-commerces, com integração de pagamentos,
+              otimização de sistemas, estratégias de marketing digital e coordenação de projetos personalizados com
+              suporte técnico contínuo. Essa experiência aprofundou minhas competências em linguagem de programação,
+              resolução de problemas e adaptabilidade.</p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <script src="assets/js/main.js"></script>
+    <script>
+      const gradient = document.getElementById('bg-gradient');
+
+      document.addEventListener('mousemove', (e) => {
+        const x = e.clientX;
+        const y = e.clientY;
+        const lightGradient = `radial-gradient(circle at ${x}px ${y}px, rgba(59,130,246,0.6), rgba(139,120,248,0.3), transparent 40%)`;
+        const darkGradient = `radial-gradient(circle at ${x}px ${y}px, rgba(59,130,246,0.3), rgba(139,92,246,0.2), transparent 70%)`;
+        if (document.documentElement.classList.contains('dark')) {
+          gradient.style.background = darkGradient;
+        } else {
+          gradient.style.background = lightGradient;
+        }
+      });
+    </script>
 </body>
+
 </html>
- 
