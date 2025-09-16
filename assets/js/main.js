@@ -17,7 +17,6 @@ toggle.addEventListener("change", () => {
   }
 });
 
-
 function projetos() {
   const section = document.getElementById("projects");
   if (section) {
@@ -25,13 +24,18 @@ function projetos() {
   }
 }
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const bars = document.querySelectorAll("[data-width]");
-  bars.forEach(bar => {
+  bars.forEach((bar) => {
     const width = bar.getAttribute("data-width");
     setTimeout(() => {
       bar.style.width = width;
     }, 200); // pequeno delay para efeito de animação
   });
+});
+
+AOS.init({
+  duration: 1000, // duração da animação em ms
+  easing: "ease-in-out", // suavização
+  once: true, // anima apenas uma vez
 });
